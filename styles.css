@@ -1,6 +1,8 @@
 body{
     margin: 0;
     background-color: #7c8b98;
+    font-family:cursive;
+
 }
 
 h2 {
@@ -10,6 +12,13 @@ h2 {
 a {
     text-decoration: none;
     color:  inherit;
+}
+
+span {
+    font-size: larger;
+}
+a:hover{
+    color: #d60e96;
 }
 
 .nav-header {
@@ -31,6 +40,9 @@ a {
     padding-right: 0.5rem;
     border-radius: 3rem;
 }
+.left-nav-img:hover{
+    border-radius: 0%;
+}
 .btn-mail {
     border-color: transparent;
     display: inline-flex;
@@ -46,6 +58,11 @@ a {
     padding-right: 1rem;
     border-radius: 0.375rem;
 }
+.btn-mail:hover{
+    background: #d60e96;
+    color:#ffffff;
+}
+
 #hero {
     display: grid;
     justify-content: center;
@@ -132,7 +149,7 @@ a {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    opacity: 0.5;
+    opacity: 1;
     transition: ease 0.3s;
     cursor: pointer;
 }
@@ -171,4 +188,15 @@ a {
     height: 800px;  
     object-fit: cover;
     border: 3px solid #ff9daa;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.Gifs{
+    display: flex;
+    justify-content: center;
 }

@@ -5,7 +5,7 @@ console.log('slides: ', slides);
 const slidesCount = slides.childElementCount
 console.log('slidesCount: ', slidesCount);
 
-const maxLeft = (slidesCount - 1)*100*-1
+const maxLeft = (slidesCount - 1)* 100* -1
 
 let current = 0;
 function changeSlide(next=true){
